@@ -16,3 +16,14 @@ def buscar (arbol, valor):
     else:
         return buscar(arbol.izquierda,valor)+buscar (arbol.derecha,valor)
 
+def evaluar(arbol):
+    if arbol.valor=='+'
+        return evaluar(arbol.izquierda)+ evaluar(arbol.derecha)
+    elif arbol.valor=='-'
+        return evaluar(arbol.izquierda)- evaluar(arbol.derecha)
+    elif arbol.valor=='*'
+        return evaluar(arbol.izquierda)* evaluar(arbol.derecha)
+    elif arbol.valor=='/'
+        return evaluar(arbol.izquierda)/ evaluar(arbol.derecha)
+    else:
+        return int(arbol.valor)
